@@ -46,6 +46,7 @@ export class ExamAnalysis {
     improvementSuggestions: string;
     studyMethodSuggestions: string;
     nextExamSuggestions: string;
+    timeAnalysisSuggestions: string;
   };
 
   @CreateDateColumn()
@@ -53,4 +54,4 @@ export class ExamAnalysis {
 
   @UpdateDateColumn()
   updatedAt: Date;
-} 
+}

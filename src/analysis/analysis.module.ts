@@ -10,4 +10,4 @@ import { ExamAnalysis } from '../entities/exam-analysis.entity';
   providers: [AnalysisService],
   exports: [AnalysisService],
 })
-export class AnalysisModule {} 
+export class AnalysisModule {}
