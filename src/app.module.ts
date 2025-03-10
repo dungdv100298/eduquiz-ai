@@ -3,8 +3,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { UsersModule } from './users/users.module';
-import { User } from './entities/user.entity';
+// import { UsersModule } from './users/users.module';
+// import { User } from './entities/user.entity';
 import { AnalysisModule } from './analysis/analysis.module';
 import { ExamAnalysis } from './entities/exam-analysis.entity';
 
@@ -18,10 +18,10 @@ import { ExamAnalysis } from './entities/exam-analysis.entity';
       username: process.env.DATABASE_USERNAME || 'eduquiz',
       password: process.env.DATABASE_PASSWORD || 'eduquiz123',
       database: process.env.DATABASE_NAME || 'eduquiz',
-      entities: [User, ExamAnalysis],
+      entities: [ExamAnalysis],
       synchronize: true, // Set to false in production
     }),
-    UsersModule,
+    // UsersModule,
     AnalysisModule,
   ],
   controllers: [AppController],
